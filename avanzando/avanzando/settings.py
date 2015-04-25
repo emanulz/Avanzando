@@ -27,12 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Backup settings
 
-# DBBACKUP_STORAGE = 'dbbackup.storage.dropbox_storage'
-# DBBACKUP_TOKENS_FILEPATH = '<local_tokens_filepath>'
-# DBBACKUP_DROPBOX_APP_KEY = 'rdh2z7zclv4guju'
-# DBBACKUP_DROPBOX_APP_SECRET = 'pfiw4twglnwwlh9'
 
 # Application definition
 
@@ -43,8 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dbbackup',
     'clients',
+    'dbbackup',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -98,7 +93,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'es.CR'
 
 TIME_ZONE = 'UTC'
 
@@ -113,3 +108,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Backup settings
+
+# DBBACKUP_STORAGE = 'dbbackup.storage.dropbox_storage'
+# DBBACKUP_TOKENS_FILEPATH = '/usr/local/tokens/'
+# DBBACKUP_DROPBOX_APP_KEY = 'rdh2z7zclv4guju'
+# DBBACKUP_DROPBOX_APP_SECRET = 'pfiw4twglnwwlh9'
