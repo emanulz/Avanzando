@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Backup settings
+
+# DBBACKUP_STORAGE = 'dbbackup.storage.dropbox_storage'
+# DBBACKUP_TOKENS_FILEPATH = '<local_tokens_filepath>'
+# DBBACKUP_DROPBOX_APP_KEY = 'rdh2z7zclv4guju'
+# DBBACKUP_DROPBOX_APP_SECRET = 'pfiw4twglnwwlh9'
 
 # Application definition
 
@@ -37,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dbbackup',
     'clients',
 )
 
@@ -86,9 +93,7 @@ DATABASES = {
         
     }
 }
-# DATABASE_OPTIONS = {
-#         'unix_socket' : '/Applications/MAMP/tmp/mysql/mysql.sock',
-#         }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
