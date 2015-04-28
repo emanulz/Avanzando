@@ -73,6 +73,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'avanzando.wsgi.application'
 
+STATIC_URL = '/static/'
+STATIC_ROOT = "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/static/"
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases

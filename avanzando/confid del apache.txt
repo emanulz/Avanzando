@@ -1,0 +1,16 @@
+WSGIScriptAlias "/" "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/avanzando/wsgi.py"
+WSGIPythonPath "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/:/Volumes/DATOS/Avanzando_Juntos/Avanzando/venv/lib/python2.7/site-packages"
+
+<Directory "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/avanzando/site-packages">
+<Files wsgi.py>
+Require all granted
+</Files>
+</Directory>
+
+Alias "/static" "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/static/"
+
+<Directory "/Volumes/DATOS/Avanzando_Juntos/Avanzando/avanzando/static/">
+    Options -Indexes FollowSymLinks
+    Order deny,allow
+    Allow from all
+</Directory>
