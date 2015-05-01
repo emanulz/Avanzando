@@ -62,12 +62,18 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 SUIT_CONFIG = {
-    'ADMIN_NAME': 'Avanzando Juntos',
 
+    'ADMIN_NAME': 'Avanzando Juntos',
+    'HEADER_DATE_FORMAT': 'l, j F Y', # Saturday, 16th March 2013
+    'HEADER_TIME_FORMAT': 'h:i a'  ,     # 18:42
+    
     'MENU':(
         {'app': 'clients', 'label': 'Clientes', 'icon':'icon-lock'},
         {'app': 'products', 'label': 'Productos', 'icon':'icon-home'},
-        )
+        )  ,
+
+    'MENU_OPEN_FIRST_CHILD': True,
+
    }
 
 # #grapelli
@@ -145,7 +151,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
+TIME_ZONE = 'America/Costa_Rica'
 
 
 # Static files (CSS, JavaScript, Images)
