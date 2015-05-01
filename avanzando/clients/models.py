@@ -18,9 +18,6 @@ class Client(models.Model):
 	credit=models.BooleanField(default=0, verbose_name='Tiene crédito')	
 	credit_limit=models.FloatField(blank=True, default=0, verbose_name='Límite de crédito')
 	email = models.EmailField(blank=True, null=True)
-	
-
-			
 
 	def __unicode__(self):
 		return self.name
