@@ -8,7 +8,7 @@ from .models import Client
 class ClientAdmin(admin.ModelAdmin):
 	
 	
-	list_display = ('name', 'identification', 'adress','email', 'hascredit')
+	list_display = ('id','name', 'identification', 'adress','email', 'phone_number','hascredit')
 	list_filter = ('name','identification')
 	search_fields = ('name','identification')
 

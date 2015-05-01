@@ -32,6 +32,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'material',
+    'material.admin',
+    #'django_admin_bootstrapped',
+    #'grappelli',
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,9 +50,34 @@ INSTALLED_APPS = (
     'tickets',
     'payments',
     'payment_methods',
-    
-    
+        
 )
+
+# #suits
+# from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+
+# TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+#     'django.core.context_processors.request',
+# )
+
+# SUIT_CONFIG = {
+#     'ADMIN_NAME': 'Avanzando Juntos',
+
+#     'MENU':(
+#         {'app': 'clients', 'label': 'Clientes', 'icon':'icon-lock'},
+#         {'app': 'products', 'label': 'Productos', 'icon':'icon-home'},
+#         )
+#    }
+
+#grapelli
+# TEMPLATE_CONTEXT_PROCESSORS = (
+#     "django.core.context_processors.request",
+# )
+
+
+        
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -102,7 +132,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'es.CR'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
