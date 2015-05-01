@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'payments',
     'payment_methods',
     
+    
 )
 
 MIDDLEWARE_CLASSES = (
