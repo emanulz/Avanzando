@@ -13,6 +13,7 @@ class ClientAdmin(admin.ModelAdmin):
 	search_fields = ('name','identification')
 
 
+
 	def hascredit(self,obj):
 		return obj.credit 
 			
