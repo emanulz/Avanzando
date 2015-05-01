@@ -32,9 +32,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'material',
-    'material.admin',
+    # 'material',
+    # 'material.admin',
     #'django_admin_bootstrapped',
+    #'grappelli.dashboard',
     #'grappelli',
     'suit',
     'django.contrib.admin',
@@ -54,26 +55,30 @@ INSTALLED_APPS = (
 )
 
 # #suits
-# from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 
-# TEMPLATE_CONTEXT_PROCESSORS = TCP + (
-#     'django.core.context_processors.request',
-# )
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+    'django.core.context_processors.request',
+)
 
-# SUIT_CONFIG = {
-#     'ADMIN_NAME': 'Avanzando Juntos',
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Avanzando Juntos',
 
-#     'MENU':(
-#         {'app': 'clients', 'label': 'Clientes', 'icon':'icon-lock'},
-#         {'app': 'products', 'label': 'Productos', 'icon':'icon-home'},
-#         )
-#    }
+    'MENU':(
+        {'app': 'clients', 'label': 'Clientes', 'icon':'icon-lock'},
+        {'app': 'products', 'label': 'Productos', 'icon':'icon-home'},
+        )
+   }
 
-#grapelli
+# #grapelli
 # TEMPLATE_CONTEXT_PROCESSORS = (
+#    # "django.contrib.auth.context_processors.auth",
 #     "django.core.context_processors.request",
+#    # "django.core.context_processors.i18n",
+#    # 'django.contrib.messages.context_processors.messages',
 # )
 
+#GRAPPELLI_INDEX_DASHBOARD = 'avanzando.dashboard.CustomIndexDashboard'
 
         
 
